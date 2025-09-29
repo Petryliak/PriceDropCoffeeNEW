@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+header {
+  width: 150%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+    background-color: #E4E1D8;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  justify-content: space-between;
+  padding: 20px 40px;
+  transition: all 0.3s ease;
+  box-shadow: none;
+ font-family: "Oswald", sans-serif;
+font-optical-sizing: auto;
+font-weight: 900; 
+font-style: normal;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.logo a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+    color: white; 
+}
+@media (max-width: 600px) {
+    header, footer {
+        padding: 15px; 
+    }
+    .header nav {
+        gap: 15px;
+    }
+
+    .header nav a {
+        font-size: 11px;
+    }
+
+    .header .cart {
+        margin-left: 10px;
+    }
+
+    .imgINDEX, .imgINDEX img {
+        width: 100vw;
+    }
+    .header img{
+        width: 60px;
+    }
+}
+form {
+  margin-top: 200px;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  width: 400px;
+
+
+  
+}
+
+
+.field {
+  margin-bottom: 25px;
+}
+
+.field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.field input {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.field input:focus {
+  border-color: #4460AA;
+  box-shadow: 0 0 5px rgba(68, 96, 170, 0.4);
+  outline: none;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 10px 30px;
+  font-size: 15px;
+  background-color: #4460AA;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #36508a;
+}
+
+
+main{
+    display: flex;
+  justify-content: center; /* центрує по горизонталі */
+  align-items: center;     /* центрує по вертикалі */
+  min-height: 100vh;
+}

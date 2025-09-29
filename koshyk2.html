@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформлення замовлення</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+<link rel="icon" type="image/png" sizes="192x192" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<link rel="shortcut icon" href="logo.png">
+</head>
+<body> <!-- Всі елементи тепер всередині body -->
+
+<div class="header">
+  <img src="logo.png" alt="logo" width="100px">
+  <nav>
+    <a href="index.html">Головна сторінка</a>
+    <a href="coffe.html">Кава</a>
+    <a href="coffecar.html">Обладнання</a>
+    <a href="koshyk.html">Кошик</a>
+  </nav>
+</div>
+
+<form id="form">
+  <div id="order-summary"></div>
+  <div class="field">
+    <label for="name">ПІБ:</label>
+    <input type="text" name="name" id="name">
+  </div>
+  <div class="field">
+    <label for="phone">Ваш номер телефону:</label>
+    <input type="text" name="phone" id="phone">
+  </div>
+  <div class="field">
+    <label for="city">Ваш населений пункт:</label>
+    <input type="text" name="city" id="city">
+  </div>
+  <div class="field">
+    <label for="post">Номер віділення нової пошти:</label>
+    <input type="text" name="post" id="post">
+  </div>
+  <input type="submit" id="button" value="Send Order" >
+</form>
+
+<div class="footer">
+              <div class="footerIMG" >
+              <img src="logo.png" alt="" width="150px">
+              </div>
+            <div class="Footercenter1">
+                <a href="https://t.me/pricedropcoffee">
+                <h4>telegram</h4>
+                </a>
+                <a href="https://www.instagram.com/price.drop.coffee/">
+                <h4>instagram</h4>
+                </a>
+                <a href="mailto:price.drop.coffee@gmail.com">
+                <h4>gmail</h4>
+                </a>
+            </div>
+          <div class="Footercenter2">
+            <a href="about.html">
+            <h4>Про нас</h4>
+            </a>
+            <a href="coffe.html">
+            <h4>Кава</h4>
+            </a>
+            <a href="coffecar.html">
+            <h4>Обладнання</h4>
+            </a>
+            <a href="koshyk.html">
+            <h4>Кошик</h4>
+            </a>
+          </div>
+        <div class="Footercenter3">
+            <h2>Хто може купити каву? Чи працюємо ми оптом?</h2>
+            <h4>Для роздрібних клієнтів,кожен може купити каву оптом чи в роздріб.</h4>
+            <h4>Для кавʼярень, магазинів ,кафе , ресторанів.</h4>
+            <h4>Для роздрібних магазинах, що продають продукцію як у пачках і на вагу, так і напої.</h4>
+            <h4>Офіси, які забезпечують напоями своїх співробітників і відвідувачів.</h4>
+
+        </div>
+
+
+
+</div>
+
+
+<!-- Скрипти EmailJS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript" src="smtp.js"></script> 
+</body>
+</html>

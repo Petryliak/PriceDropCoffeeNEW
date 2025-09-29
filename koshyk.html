@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Кошик</title>
+  <link rel="stylesheet" href="koshyk.css">
+<link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+<link rel="icon" type="image/png" sizes="192x192" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<link rel="shortcut icon" href="logo.png">
+</head>
+<style>
+    header{margin-bottom: 50px;}
+</style>
+<body>
+
+  <header>
+    <div class="imgB2">
+      <a href="index.html"><img src="logo.png" alt="Logo" width="100px" /></a>
+    </div>
+    <nav>
+        <a href="index.html">Головна сторінка</a>
+        <a href="about.html">Про нас</a>
+        <a href="coffe.html">Кава</a>
+        <a href="coffecar.html">Обладнання</a>
+        <div class="cart-icon" onclick="toggleCart()">
+      🛒 <span id="cart-count">0</span>
+    </div>
+    </nav>
+  </header>
+
+<main>
+<div class="containerCOFFE">
+  <div class="COFFETEXT">
+    <h1>Gentle&nbsp;Cream</h1>
+  </div>
+  <div class="COFFEIMG">
+    <img src="rad.png" width="210px">
+    <div class="COFFEBUTTON">
+      <button onclick="addToCart('Кава Gentle Cream', 735)">735 ₴ / КУПИТИ</button>
+    </div>
+  </div>
+</div>
+    <div class="containerCOFFE">
+        <div class="COFFETEXT">
+            <h1>Caffe&nbsp;Perfetto</h1>
+        </div>
+        <div class="COFFEIMG">
+            <img src="white.png" width="210px">
+            <div class="COFFEBUTTON">
+            <button onclick="addToCart('Кава Caffe Perfetto', 735)">735 ₴ / КУПИТИ</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="containerCOFFE">
+        <div class="COFFETEXT">
+            <h1>Irish&nbsp;Cream</h1>
+        </div>
+        <div class="COFFEIMG">
+            <img src="іріш.png" width="210px">
+            <div class="COFFEBUTTON">
+            <button onclick="addToCart('Кава Irish Cream', 735)">735 ₴ / КУПИТИ</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+    </div>
+
+
+    <div class="containerCOFFE">
+        <div class="COFFETEXT">
+            <h1>TM "Carimali" BlueDot</h1>
+        </div>
+        <div class="COFFEIMG">
+            <img src="апартат5png.png" width="330px">
+            <div class="COFFEBUTTON">
+            <button onclick="addToCart('TM Carimali BlueDot', 68000)">1450 € / КУПИТИ</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+    </div>
+
+      <div class="containerCOFFE">
+        <div class="COFFETEXT">
+            <h1>TM "Carimali" BlueDot Plus</h1>
+        </div>
+        <div class="COFFEIMG">
+            <img src="апарат6.png" width="330px">
+            <div class="COFFEBUTTON">
+            <button onclick="addToCart('TM Carimali BlueDot Plus', 68000)">1450 € / КУПИТИ</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+    </div>
+
+          <div class="containerCOFFE">
+        <div class="COFFETEXT">
+            <h1>Rheavendors CINO eC</h1>
+        </div>
+        <div class="COFFEIMG">
+            <img src="апарат1.png" width="330px">
+            <div class="COFFEBUTTON">
+            <button onclick="addToCart('Rheavendors CINO', 42300)">900 € / КУПИТИ</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+    </div>
+
+              <div class="containerCOFFE">
+        <div class="COFFETEXT">
+            <h1>Rheavendors XS Grande</h1>
+        </div>
+        <div class="COFFEIMG">
+            <img src="апарат3.png" width="330px">
+            <div class="COFFEBUTTON">
+            <button onclick="addToCart('Rheavendors XS Grande', 42300)">900 €/ КУПИТИ</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+    </div>
+        <div class="containerCOFFE">
+        <div class="COFFETEXT">
+            <h1>Rheavendors Business</h1>
+        </div>
+        <div class="COFFEIMG">
+            <img src="апарат4.png" width="330px">
+            <div class="COFFEBUTTON">
+            <button onclick="addToCart('Rheavendors Business', 42300)">900 €/ КУПИТИ</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+    </div>
+
+        <div class="containerCOFFE">
+        <div class="COFFETEXT">
+            <h1>Carimali Armonia Ultra LM</h1>
+        </div>
+        <div class="COFFEIMG">
+            <img src="carimali-armonia-ultra-removebg-preview.png" width="280px">
+            <div class="COFFEBUTTON">
+            <button onclick="addToCart('Carimali Armonia', 75200)">1600 €/ КУПИТИ</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+    </div>
+
+
+       <div class="containerCOFFE">
+        <div class="COFFETEXT">
+            <h1>Rheavendors top</h1>
+        </div>
+        <div class="COFFEIMG">
+            <img src="image-removebg-preview.png" width="310px">
+            <div class="COFFEBUTTON">
+            <button onclick="addToCart('Rheavendors top', 68000)">1450 €/ КУПИТИ</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+    </div>
+
+
+
+
+
+
+
+  <div class="cart-popup" id="cart">
+    <h2>Кошик</h2>
+    <div id="cart-items"></div>
+    <p class="total">Сума: <span id="total">0</span> грн</p>
+    <a href="koshyk2.html">Перейти до оплати</a>
+  </div>
+
+<div class="footer">
+              <div class="footerIMG" >
+              <img src="logo.png" alt="" width="150px">
+              </div>
+            <div class="Footercenter1">
+                <a href="https://t.me/pricedropcoffee">
+                <h4>telegram</h4>
+                </a>
+                <a href="https://www.instagram.com/price.drop.coffee/">
+                <h4>instagram</h4>
+                </a>
+                <a href="mailto:price.drop.coffee@gmail.com">
+                <h4>gmail</h4>
+                </a>
+            </div>
+          <div class="Footercenter2">
+            <a href="about.html">
+            <h4>Про нас</h4>
+            </a>
+            <a href="coffe.html">
+            <h4>Кава</h4>
+            </a>
+            <a href="coffecar.html">
+            <h4>Обладнання</h4>
+            </a>
+            <a href="koshyk.html">
+            <h4>Кошик</h4>
+            </a>
+          </div>
+        <div class="Footercenter3">
+            <h2>Хто може купити каву? Чи працюємо ми оптом?</h2>
+            <h4>Для роздрібних клієнтів,кожен може купити каву оптом чи в роздріб.</h4>
+            <h4>Для кавʼярень, магазинів ,кафе , ресторанів.</h4>
+            <h4>Для роздрібних магазинах, що продають продукцію як у пачках і на вагу, так і напої.</h4>
+            <h4>Офіси, які забезпечують напоями своїх співробітників і відвідувачів.</h4>
+
+        </div>
+
+
+
+</div>
+
+
+<script src="dav.js"></script>
+</body>
+</html>
