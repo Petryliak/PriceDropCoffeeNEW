@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://pricedropcoffee.com.ua/</loc>
+      <priority>1.00</priority>
+   </url>
+   <url>
+      <loc>https://pricedropcoffee.com.ua/index2.html</loc>
+      <priority>0.80</priority>
+   </url>
+   <url>
+      <loc>https://pricedropcoffee.com.ua/index3.html</loc>
+      <priority>0.90</priority>
+   </url>
+   <url>
+      <loc>https://pricedropcoffee.com.ua/equipment.html</loc>
+      <priority>0.90</priority>
+   </url>
+</urlset>

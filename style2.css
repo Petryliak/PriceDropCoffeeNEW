@@ -1,0 +1,85 @@
+/* =========================================
+   СТОРІНКА "ПРО НАС" (about.html)
+   ========================================= */
+.about-intro {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 80px 20px 50px;
+}
+
+.about-intro h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-intro p {
+    font-size: 18px;
+    color: #555555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.history-section {
+    background-color: #ffffff;
+    padding: 0 8% 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.history-card {
+    background-color: #2b1c14; /* Темно-коричневий колір блоку */
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 60px 80px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.history-card h2 {
+    color: #d1a272; /* Пісочний колір заголовка */
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.history-card p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+.history-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* Адаптація сторінки "Про нас" під телефони */
+@media (max-width: 768px) {
+    .about-intro {
+        padding: 60px 15px 30px;
+    }
+
+    .about-intro h1 {
+        font-size: 36px;
+    }
+
+    .about-intro p {
+        font-size: 16px;
+    }
+
+    .history-section {
+        padding: 0 15px 60px;
+    }
+
+    .history-card {
+        padding: 40px 25px;
+    }
+
+    .history-card h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+}
